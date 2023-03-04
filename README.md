@@ -37,7 +37,7 @@ npm install && npx create-react-app .
 // Run client & server with concurrently
 npm start
 
-// Server runs on http://localhost:5000 and client on http://localhost:3000
+// Server runs on http://localhost:8010 and client on http://localhost:3000
 ```
 
 For Deploying The FrontEnd, Backend I Use Vercel & Render.
