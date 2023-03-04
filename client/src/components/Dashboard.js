@@ -48,7 +48,7 @@ const Dashboard = () => {
         <>
             {
                 data ? <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding:"10px" }}>
-                    <img src="./man.png" style={{ width: "100px", marginTop: 20 }} alt="" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" style={{ width: "100px", marginTop: 20 }} alt="" />
                     <h1>User Full Name: {logindata ? logindata.ValidUserOne.firstname : ""} {logindata ? logindata.ValidUserOne.lastname : ""}</h1>
                 </div> : <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", height: "100vh" }}>
                     Loading... &nbsp;
