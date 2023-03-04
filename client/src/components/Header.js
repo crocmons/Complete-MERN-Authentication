@@ -22,30 +22,34 @@ const Header = () => {
     };
 
 
-    const logoutuser = async () => {
+    const logoutuser = () => {
         let token = localStorage.getItem("usersdatatoken");
          console.log(token)
-        const res = await fetch("https://complete-mern-authentication.onrender.com/logout", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": token,
-                Accept: "application/json"
-            },
-            credentials: "include"
-        });
+//         const res = await fetch("https://complete-mern-authentication.onrender.com/logout", {
+//             method: "GET",
+//             headers: {
+//                 "Content-Type": "application/json",
+//                 "Authorization": token,
+//                 Accept: "application/json"
+//             },
+//             credentials: "include"
+//         });
 
-        const data = await res.json();
-        console.log(data);
+//         const data = await res.json();
+//         console.log(data);
 
-        if (data) {
-            console.log("use logout");
-            localStorage.removeItem("usersdatatoken");
-            setLoginData(false)
-            history("/");
-        } else {
-            console.log("error");
-        }
+//         if (data) {
+//             console.log("use logout");
+//             localStorage.removeItem("usersdatatoken");
+//             setLoginData(false)
+//             history("/");
+//         } else {
+//             console.log("error");
+//         }
+       
+		localStorage.removeItem("token");
+		window.location.reload();
+	
     }
 
     console.log(logindata)
