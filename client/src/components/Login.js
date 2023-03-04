@@ -52,7 +52,7 @@ const Login = () => {
             // console.log("user login succesfully done");
 
 
-            const data = await fetch("/login",{
+            const data = await fetch("https://complete-mern-authentication.onrender.com/login",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
