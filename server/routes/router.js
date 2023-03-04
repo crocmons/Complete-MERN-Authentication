@@ -169,7 +169,7 @@ router.post("/sendpasswordlink",async(req,res)=>{
                 from:"fatimaara784@gmail.com",
                 to:email,
                 subject:"Forget Password Reset",
-                text:` Password Reset Link valid for 2 Minutes - http://localhost:3000/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
+                text:` Password Reset Link valid for 2 Minutes - https://complete-mern-auth.vercel.app/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
             }
 
             transporter.sendMail(mailOptions,(error,info)=>{
