@@ -66,7 +66,7 @@ const Header = () => {
                 <NavLink to="/"><h1>LogIn</h1></NavLink>
                     <div className="avtar">
                         {
-                            logindata.ValidUserOne ? <Avatar style={{ background: "green", fontWeight: "bold", textTransform: "capitalize" }} onClick={handleClick}>{logindata.ValidUserOne.fname[0].toUpperCase()}</Avatar> :
+                            logindata.ValidUserOne ? <Avatar style={{ background: "green", fontWeight: "bold", textTransform: "capitalize" }} onClick={handleClick}>{logindata.ValidUserOne.firstname[0].toUpperCase()}</Avatar> :
                                 <Avatar style={{ background: "blue" }} onClick={handleClick} />
                         }
 
