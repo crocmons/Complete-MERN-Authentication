@@ -25,7 +25,7 @@ const Header = () => {
     const logoutuser = async () => {
         let token = localStorage.getItem("usersdatatoken");
          console.log(token)
-        const res = await fetch("https://complete-mern-auth.vercel.app/logout", {
+        const res = await fetch("https://complete-mern-authentication.onrender.com/logout", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
