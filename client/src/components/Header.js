@@ -102,30 +102,13 @@ export default function Sidebar() {
     const logoutuser = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("/logout", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": token,
-                Accept: "application/json"
-            },
-            credentials: "include"
-        });
-
-        const data = await res.json();
-        console.log(data);
-
-        if (data.status == 201) {
-            console.log("use logout");
+        
             localStorage.removeItem("usersdatatoken");
             setLoginData(false)
             history("/");
-        } else {
-            console.log("error");
-        }
+        
     }
 
-    console.log(logindata)
 
     const goDash = () => {
         history("/dash")
