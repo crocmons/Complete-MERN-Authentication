@@ -49,7 +49,7 @@ const Dashboard = () => {
             {
                 data ? <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding:"40px", marginTop:"60px", justifyItems:"center"}}>
                     <img src="./man.png" style={{ width: "100px", marginTop: 30 }} alt="" />
-                    <h1>User Full Name: {logindata ? logindata.ValidUserOne.fname : ""}</h1>
+                    <h1>User Full Name: {logindata ? logindata.ValidUserOne.firstname : ""} {logindata ? logindata.ValidUserOne.lastname : ""}</h1>
                 </div> : <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", height: "100vh" }}>
                     Loading... &nbsp;
                     <CircularProgress />
