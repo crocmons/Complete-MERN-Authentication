@@ -48,7 +48,8 @@ const Header = () => {
 //         }
        
 		localStorage.removeItem("token");
-		window.location.reload();
+		setLoginData(false)         
+	        history("/");
 	
     }
 
